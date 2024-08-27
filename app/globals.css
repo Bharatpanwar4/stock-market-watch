@@ -2,3 +2,35 @@
 @tailwind components;
 @tailwind utilities;
   
+
+
+
+.ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  
+  .ticker {
+    /* display: inline-block;
+    animation: scroll 60s linear infinite; */
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ticker-item {
+    display: inline-block;
+    margin-right: 50px; /* Space between items */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

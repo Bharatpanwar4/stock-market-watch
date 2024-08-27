@@ -4,6 +4,7 @@ import { logoIcon } from "../utils/Image";
 import { Input } from "@/lib/ui/input";
 import { Bell, ShoppingCart, Wallet } from "lucide-react";
 import ThemeController from "./ThemeController";
+import GlobalSearch from "../screens/global-search";
 
 const Header = () => {
   return (
@@ -16,8 +17,10 @@ const Header = () => {
           </h1>
         </div>
         <div>
-          <Input className="border border-borderColor  dark:border-darkBorderColor placeholder:text-[#7c7e8c] placeholder:text-xs" placeholder="What are you looking at today?"/>
+
+          {/* <Input className="border border-borderColor  dark:border-darkBorderColor placeholder:text-[#7c7e8c] placeholder:text-xs" placeholder="What are you looking at today?"/> */}
         </div>
+        <GlobalSearch/>
         <div className="flex items-center justify-between gap-8">
 
 <ThemeController/>  
