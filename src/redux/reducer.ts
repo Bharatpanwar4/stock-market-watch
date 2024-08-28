@@ -2,13 +2,13 @@ import { combineReducers } from 'redux';
 
 
 import common from './slice/common';
-import { authApi } from './services/authApi';
+import { commonApi } from './services/commonApi';
 
 
 const appReducer = combineReducers({
   common,
  
-  [authApi.reducerPath]: authApi.reducer,
+  [commonApi.reducerPath]: commonApi.reducer,
 //   [profileApi.reducerPath]: profileApi.reducer,
 //   [reportApi.reducerPath]: reportApi.reducer,
 //   [refAndEarnApi.reducerPath]: refAndEarnApi.reducer,

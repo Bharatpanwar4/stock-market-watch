@@ -1,10 +1,5 @@
 export {
-    toUpdateActiveModal,
-    toUpdateDateRangePicker,
-    toUpdateErrorState,
-    toUpdateLoadingState,
-    toUpdateOnceCallApiList,
-    toUpdateSeparateLoading,
-    toggleMobileMenu,
-    toggleSideBar,
-  } from './slice/common';
+  toUpdateErrorState,
+  toUpdateLoadingState,
+  toUpdateStockListData,
+} from "./slice/common";

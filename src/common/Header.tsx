@@ -8,7 +8,7 @@ import GlobalSearch from "../screens/global-search";
 
 const Header = () => {
   return (
-    <div className="border-b border-borderColor dark:border-darkBorderColor">
+    <div className="border-b border-borderColor glassHeader bg-[rgba(255,255,255,0.5)]  dark:bg-[rgba(255,255,255,0.1)] dark:border-darkBorderColor">
       <div className="container flex items-center justify-between py-2">
         <div className="flex items-center gap-3">
           <Image src={logoIcon} alt="logo" className="w-10 h-10 rotate-90" />

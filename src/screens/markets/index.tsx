@@ -1,7 +1,11 @@
 'use client'
+import { MarketIndice } from '@/src/utils/data';
 import React, { useState, useEffect } from 'react';
 
-function MarketIndexes() {
+const MarketIndexes=() =>{
+  
+
+  console.log('market',MarketIndice);
   
 
   return (

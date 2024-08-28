@@ -12,7 +12,7 @@ import {
 import sessionStorage from 'redux-persist/lib/storage/session';
 import rootReducer from './reducer';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import { authApi } from './services/authApi';
+import {  commonApi } from './services/commonApi';
 
 
 // const middleware =  [
@@ -38,7 +38,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }).concat(authApi.middleware),
+    }).concat(commonApi.middleware),
 });
 
 setupListeners(store.dispatch);

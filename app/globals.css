@@ -3,22 +3,45 @@
 @tailwind utilities;
   
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+  background-color: rgb(218, 218, 218);
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 
 
 .ticker-container {
-    overflow: hidden;
-    white-space: nowrap;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
     background-color: #282c34;
     color: white;
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 6px;
+    /* font-size: 1.2em; */
   }
   
   .ticker {
-    /* display: inline-block;
-    animation: scroll 60s linear infinite; */
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    animation: scroll 0s linear infinite;
+   
   }
   
   .ticker-item {
@@ -33,4 +56,36 @@
     to {
       transform: translateX(-100%);
     }
+  }
+
+
+  
+  .triangle-red{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 5px 10px 5px;
+border-color: transparent transparent #EB5B3C transparent;
+  }
+  .triangle-green{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 5px 10px 5px;
+border-color: transparent transparent #00B386 transparent;
+  }
+
+
+  .glassHeader{
+    /* background: rgba(255,255,255,0.5) !important; */
+-webkit-backdrop-filter: blur(10px) !important;
+backdrop-filter: blur(10px) !important;
+/* border: 1px solid rgba(255,255,255,0.25); */
+  }
+
+  .darkglassHeader{
+    /* background: rgba(255,255,255,0.1) !important; */
+-webkit-backdrop-filter: blur(10px) !important;
+backdrop-filter: blur(10px) !important;
+/* border: 1px solid rgba(255,255,255,0.25); */
   }

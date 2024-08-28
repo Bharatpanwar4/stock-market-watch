@@ -1,4 +1,4 @@
-const MarketIndice= {
+export const MarketIndice= {
 "us": [
 {
 "stock": ".DJI:INDEXDJX",

@@ -7,11 +7,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container ">
+    <main className="container  ">
   {/* <StockScreener/> */}
-  {/* <MarketIndexes/> */}
+  <MarketIndexes/>
 
-<Ticker/>
+{/* <Ticker/> */}
     </main>
   );
 }
