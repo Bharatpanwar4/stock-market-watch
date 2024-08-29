@@ -32,3 +32,36 @@ export interface ITickerSearchInputProps {
   limit: number;
   exchange: string;
 }
+
+
+// market indice
+type PriceMovement = {
+  percentage: number;
+  value: number;
+  movement: "Up" | "Down";
+};
+
+type StockInfo = {
+  stock: string;
+  link: string;
+  serpapi_link: string;
+  name: string;
+  price: number;
+  price_movement: PriceMovement;
+  currency?: string; // Optional, only used in "futures"
+};
+
+export type MarketIndices = {
+  us: StockInfo[];
+  europe: StockInfo[];
+  asia: StockInfo[];
+  currencies: StockInfo[];
+  crypto: StockInfo[];
+  futures: StockInfo[];
+  top_news: {
+    link: string;
+    snippet: string;
+    source: string;
+    date: string;
+  };
+};

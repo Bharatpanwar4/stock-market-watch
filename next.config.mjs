@@ -2,7 +2,7 @@
 const nextConfig = {
   
         images: {
-            domains: ['financialmodelingprep.com'],
+            domains: ['financialmodelingprep.com','assets-netstorage.groww.in'],
           },
       
 };

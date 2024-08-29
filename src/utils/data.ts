@@ -1,4 +1,6 @@
-export const MarketIndice= {
+import { MarketIndices } from "./type";
+
+export const MarketIndice:MarketIndices= {
 "us": [
 {
 "stock": ".DJI:INDEXDJX",

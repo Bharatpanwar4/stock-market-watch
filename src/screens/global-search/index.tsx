@@ -24,7 +24,7 @@ const GlobalSearch = () => {
     return () => clearTimeout(delayDebounceFn); // Cleanup on unmount
   }, [query]);
 
-  console.log("ssssssssssssssssss", searchResults);
+  // console.log("ssssssssssssssssss", searchResults);
 
   return (
     <div className="w-1/3 relative">
@@ -44,14 +44,16 @@ const GlobalSearch = () => {
               key={result.symbol}
               className="p-2 hover:bg-gray-200  dark:hover:bg-darkCard/10 cursor-pointer flex items-center  gap-3 "
             >
-              <div className=" rounded-full   ">
+              <div className=" rounded   ">
                 <Image
                   width={900}
                   height={900}
-                  // src={`https://financialmodelingprep.com/image-stock/${result.symbol}.png`}
-src={landmarkIcon}
+                  src={`https://financialmodelingprep.com/image-stock/${result.symbol}.png`}
+                  // src={`https://assets-netstorage.groww.in/stock-assets/logos/GIDXNIFTYFIN.png`}
+
+// src={landmarkIcon}
                   alt="img"
-                  className="w-6 h-6 rounded-full"
+                  className="w-12 h-12 rounded-full text-subActiveColor"
                 />
               </div>{" "}
 

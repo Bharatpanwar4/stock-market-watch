@@ -18,12 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-darkMode `} >
+      <body className={`${inter.className} dark:bg-darkMode `} suppressHydrationWarning>
       <ThemeProvider
             attribute="class"
             defaultTheme="light"
             enableSystem
             disableTransitionOnChange
+            
           >
             <Route children={children}/>
           </ThemeProvider>

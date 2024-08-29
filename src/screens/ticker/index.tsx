@@ -13,7 +13,7 @@ const Ticker = () => {
   useEffect(()=>{
 if(data){
   dispatch(toUpdateStockListData(data))
-  // console.log('dddddddddddd>>>>>>>>>>>>',data);
+  console.log('dddddddddddd>>>>>>>>>>>>',data);
   
 }
   },[data])
@@ -21,7 +21,7 @@ if(data){
   return (
     <div>
     {
-      isLoading ? <div className="ticker-container flex items-center justify-center animate-pulse h-6   text-xs font-semibold"> GOOD MORNING   </div> : 
+      isLoading ? <div className="ticker-container flex items-center justify-center animate-pulse h-6  text-xs font-semibold"> GOOD MORNING   </div> : 
          <Marquee className="ticker-container  text-xs font-semibold" pauseOnHover>
          {stockListData?.length > 0 &&
               stockListData.map((item, index) => (
